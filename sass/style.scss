@@ -66,7 +66,43 @@ body {
 }
 
 /* Splash */
-.splash { margin-top: 74px; }
+.splash { 
+    margin-top: 74px; 
+    height: 80vh;
+    position: relative;
+    background-image: url("/images/pexels-omar-markhieh-1447263.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .splash-row { 
+        flex-direction: column; 
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        .btn-yellow {
+            position: relative;
+            top: 50px;
+            right: -750px;
+            width: fit-content;
+            background-color: $color-yellow;
+            border-radius: 4px;
+            display: inline-block;
+            cursor: pointer;
+            color: $color-light;
+            font-family: $font-title;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 13px 44px;
+            text-decoration: none;
+        
+            &:hover { opacity: 0.7px; }
+        }
+    }
+}
 
 /* Services */
 .services { margin-top: 74px; }
