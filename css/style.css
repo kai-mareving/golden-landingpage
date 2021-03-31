@@ -1,47 +1,22 @@
 /* Global */
+.bg-dark { background-color: #343336 !important; }
 
-/* font-family: 'Gentium Book Basic', serif;
-font-family: 'Great Vibes', cursive;
-font-family: 'Lato', sans-serif; */
-
-.bg-dark {
-    background-color: #343a40!important;
-}
-
-body {
-    margin: 0;
-    font-family: 'Gentium Book Basic', serif, 'Lato', sans-serif, 'Great Vibes', cursive;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: center;
-    background-color: #fff;
-}
+body { margin: 0; font-family: 'Gentium Book Basic', serif, 'Lato', sans-serif, 'Great Vibes', cursive; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #343336; text-align: center; background-color: #F7F7F7; }
 
 /* Navbar */
+.navbar { display: flex; align-items: center; align-content: space-between; justify-content: baseline; padding: .5rem 1rem; }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: .5rem 1rem;
-}
+.navbar .navbar-brand { flex: 1; }
 
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
+.navbar .navbar-list { flex: 2; }
 
+.navbar li { display: inline-flex; list-style: none; line-height: 1.5; }
 
+.navbar li a { padding-right: 1rem; text-decoration: none; color: #F7F7F7; font-family: "Lato", sans-serif; }
 
+.fixed-top { position: fixed; top: 0; right: 0; left: 0; z-index: 1030; }
+
+.logo { font-family: "Great Vibes", cursive; font-size: 2rem; color: #F2C335 !important; text-decoration: none; }
 
 /* Media */
-@media (min-width: 768px){
-    .navbar-expand-md {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-    }
-}
+@media (min-width: 768px) { .navbar-expand-md { flex-flow: row nowrap; justify-content: flex-start; } }

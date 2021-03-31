@@ -1,0 +1,79 @@
+/* Global */
+
+$font-title: 'Gentium Book Basic', serif;
+$font-text: 'Lato', sans-serif; 
+$font-special: 'Great Vibes', cursive;
+
+$color-dark: #343336;
+$color-light: #F7F7F7;
+$color-yellow: #F2C335;
+
+.bg-dark {
+    background-color: $color-dark!important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gentium Book Basic', serif, 'Lato', sans-serif, 'Great Vibes', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-dark;
+    text-align: center;
+    background-color: $color-light;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    padding: .5rem 1rem;
+    
+    .navbar-brand {flex: 1;}
+    .navbar-list {flex: 2;}
+    
+    li {
+        display: inline-flex;
+        list-style: none;
+        line-height: 1.5;
+        a {
+            padding-right: 1rem;
+            text-decoration: none;
+            color: $color-light;
+            font-family: $font-text;
+        }
+    }
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.logo {
+    font-family: $font-special;
+    font-size: 2rem;
+    color: $color-yellow!important;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    margin: 0;
+    background-color: $color-light!important;
+    padding: .5rem!important;
+}
+
+/* Media */
+@media (min-width: 768px){
+    .navbar-expand-md {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+}
