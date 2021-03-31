@@ -1,0 +1,47 @@
+/* Global */
+
+/* font-family: 'Gentium Book Basic', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lato', sans-serif; */
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gentium Book Basic', serif, 'Lato', sans-serif, 'Great Vibes', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+
+/* Media */
+@media (min-width: 768px){
+    .navbar-expand-md {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+}
