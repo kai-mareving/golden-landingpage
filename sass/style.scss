@@ -20,9 +20,9 @@ body {
     background-color: $color-light;
 }
 
-.bg-dark {
-    background-color: $color-dark!important;
-}
+// .bg-dark {
+//     background-color: $color-dark!important;
+//}
 
 .section-title {
     font-size: 80px;
@@ -71,7 +71,8 @@ body {
     align-items: center;
     align-content: space-between;
     padding: .5rem 1rem;
-    
+    background-color: $color-dark!important;
+
     .navbar-brand {flex: 1;}
     .navbar-list {flex: 2;}
     
