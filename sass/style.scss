@@ -124,11 +124,13 @@ body {
     margin-top: 74px;
     .row { padding-bottom: 40px; }
     i[class*="fas"] { 
-        font-size: 38px; 
+        font-size: 36px; 
+        width: 80px;
+        height: 80px;
         padding: 16px;
         color: $color-yellow; 
         border: 5px solid $color-yellow; 
-        border-radius: 100%; 
+        border-radius: 50%; 
         }
 
     }
