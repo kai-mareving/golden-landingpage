@@ -1,7 +1,7 @@
 /* Global */
 
-$font-title: 'Gentium Book Basic', serif;
-$font-text: 'Lato', sans-serif; 
+$font-raleway: 'Raleway', sans-serif;
+$font-serif: 'Merriweather', serif; 
 $font-special: 'Great Vibes', cursive;
 
 $color-dark: #343336;
@@ -11,8 +11,8 @@ $color-yellow: #F2C335;
 
 body {
     margin: 0;
-    font-family: 'Gentium Book Basic', serif, 'Lato', sans-serif, 'Great Vibes', cursive;
-    font-size: 1rem;
+    font-family: $font-raleway, sans-serif;
+    font-size: .9rem;
     font-weight: 400;
     line-height: 1.5;
     color: $color-dark;
@@ -25,13 +25,12 @@ body {
 //}
 
 .section-title {
-    font-size: 80px;
-    display: block;
-    
+    font-family: $font-raleway, sans-serif;
+    font-size: 46px;
 }
 .section-subtitle {
-    font-size: 46px;
-    display: block;
+    font-family: $font-raleway, sans-serif;
+    font-size: 24px;
 }
 
 .btn-yellow {
@@ -43,7 +42,7 @@ body {
     vertical-align: middle;
     cursor: pointer;
     color: $color-light;
-    font-family: $font-title;
+    font-family: $font-raleway;
     font-size: 22px;
     font-weight: bold;
     padding: 33px 44px;
@@ -55,6 +54,8 @@ body {
 .list-unstyled { list-style: none; }
 
 .list-inline { display: inline-flex; }
+
+.text-italic { font-family: $font-serif; }
 
 .fixed-top {
     position: fixed;
@@ -82,7 +83,7 @@ body {
             padding-right: 1rem;
             text-decoration: none;
             color: $color-light;
-            font-family: $font-text;
+            font-family: $font-raleway;
         }
     }
 }
@@ -112,13 +113,14 @@ body {
         align-items: center;
         line-height: 0%;
     }
+    .splash-title { font: $font-raleway, sans-serif; font-size: 80px; }
+    .splash-subtitle { font: italic 46px $font-serif, serif; }
 }
 
 
 /* Services */
 .services { 
     margin-top: 74px; 
-    
     }
 
 /* Gallery */
