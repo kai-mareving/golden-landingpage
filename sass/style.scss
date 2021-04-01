@@ -98,7 +98,7 @@ body {
 .splash { 
     margin-top: 74px; 
     height: 80vh;
-    background-image: url("/images/pexels-omar-markhieh-1447263.jpg");
+    background-image: url("../images/pexels-omar-markhieh-1447263.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -116,7 +116,10 @@ body {
 
 
 /* Services */
-.services { margin-top: 74px; }
+.services { 
+    margin-top: 74px; 
+    
+    }
 
 /* Gallery */
 .gallery { margin-top: 74px; }
