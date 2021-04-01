@@ -65,6 +65,8 @@ body {
     z-index: 1030;
 }
 
+.justify-content-center { justify-content: center; }
+
 /* Navbar */
 
 .navbar {
@@ -106,10 +108,9 @@ body {
 
     .splash-row { 
         flex-direction: column; 
+        height: 80vh;
         width: 100%;
-        transform: translate(0%,80%);
         color: $color-light;
-        justify-content: center;
         align-items: center;
         line-height: 0%;
     }
@@ -120,7 +121,16 @@ body {
 
 /* Services */
 .services { 
-    margin-top: 74px; 
+    margin-top: 74px;
+    .row { padding-bottom: 40px; }
+    i[class*="fas"] { 
+        font-size: 38px; 
+        padding: 16px;
+        color: $color-yellow; 
+        border: 5px solid $color-yellow; 
+        border-radius: 100%; 
+        }
+
     }
 
 /* Gallery */
