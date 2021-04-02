@@ -20,10 +20,6 @@ body {
     background-color: $color-light;
 }
 
-// .bg-dark {
-//     background-color: $color-dark!important;
-//}
-
 .section-title {
     font-family: $font-raleway, sans-serif;
     font-size: 46px;
@@ -42,13 +38,19 @@ body {
     vertical-align: middle;
     cursor: pointer;
     color: $color-light;
+    background-position: 100% 0;
+	background-size: 300%;
+	transition: all 1s;
     font-family: $font-raleway;
     font-size: 22px;
     font-weight: bold;
     padding: 33px 44px;
     text-decoration: none;
 
-    &:hover { opacity: 0.7px; }
+    &:hover { 
+        background-position: 0 100%;
+        opacity: 0.5px; 
+    }
 }
 
 .list-unstyled { list-style: none; }
@@ -73,8 +75,10 @@ body {
     display: flex;
     align-items: center;
     align-content: space-between;
-    padding: .5rem 1rem;
-    background-color: $color-dark!important;
+    padding: 1rem 1rem;
+    // background-color: $color-dark!important;
+    background-image: url("../images/pexels-omar-markhieh-1447263.jpg");
+    background-position: center bottom;
 
     .navbar-brand {flex: 1;}
     .navbar-list {flex: 2;}
