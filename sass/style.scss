@@ -78,34 +78,32 @@ body {
     align-items: center;
     align-content: space-between;
     padding: 1rem 1rem;
-    // background-color: $color-dark!important;
-    background-image: url("../images/pexels-omar-markhieh-1447263.jpg");
-    background-position: center bottom;
+    background-color: $color-dark!important;
+    opacity: 0.6;
 
-    .navbar-brand {flex: 1;}
-    .navbar-list {flex: 2;}
+    .navbar-brand {flex: 1; }
+    .navbar-list {flex: 2; }
     
-    li {       
-        line-height: 1.5;
-        .nav-link {
-            padding-right: 1rem;
-            text-decoration: none;
-            color: $color-light;
-            font-family: $font-raleway;
-        }
+    .nav-link {
+        padding-right: 2rem;
+        text-decoration: none;
+        color: $color-light;
+        font-family: $font-raleway;
+        font-weight: bold;
     }
 }
 
 .logo {
     font-family: $font-special;
     font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
     color: $color-yellow!important;
     text-decoration: none;
 }
 
 /* Splash */
 .splash { 
-    margin-top: 74px; 
     height: 80vh;
     background-image: url("../images/pexels-omar-markhieh-1447263.jpg");
     background-position: center center;
