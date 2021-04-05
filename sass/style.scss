@@ -23,6 +23,7 @@ body {
 .section-title {
     font-family: $font-raleway, sans-serif;
     font-size: 46px;
+    margin-bottom: 20px;
 }
 .section-subtitle {
     font-family: $font-raleway, sans-serif;
@@ -40,8 +41,8 @@ body {
     color: $color-light;
     background-image: linear-gradient(90deg, $color-light 50%, transparent 50%);
     background-position: 100% 0;
-	background-size: 300%;
-	transition: all 1s;
+    background-size: 300%;
+    transition: all 1s;
     font-family: $font-raleway;
     font-size: 22px;
     font-weight: bold;
@@ -116,7 +117,7 @@ body {
         width: 100%;
         color: $color-light;
         align-items: center;
-        line-height: 0%;
+        // line-height: 0%;
     }
     .splash-title { font: $font-raleway, sans-serif; font-size: 80px; }
     .splash-subtitle { font: italic 46px $font-serif, serif; }
@@ -143,18 +144,17 @@ body {
 /* Gallery */
 .gallery {
     margin-top: 74px;
-    line-height: 0.2rem;
     div[class*="col"] {
         position: relative;
         display: flex;
         flex-direction: column;
     }
+    p { margin: 0 0 40px; } // top right/left bottom
     img {
         width: 100%;
 		height: 350px;
 		object-fit: cover;
     }
-    // .gallery-text {}
 }
 
 /* Footer */
@@ -173,9 +173,35 @@ footer {
 
 
 /* Media */
-@media (min-width: 768px){
+@media (max-width: 576px) {
     .navbar-expand-md {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .navbar .navbar-brand { 
+        flex: 1; 
+        width: 100%; 
+    }
+    .navbar .list-inline { flex-direction: column; }
+
+    .btn-yellow {
+        font-size: 2.2em;
+        padding: 23px 34px;
+    }
+
+    .splash {
+        height: auto;
+        font-size: 40%;
+        padding: 210px 0 40px;
+        .splash-row { 
+            height: auto;
+            width: auto; 
+            .splash-title { font-size: 8em; }
+            .splash-subtitle { font-size: 4.6em; }
+        }
+    }
+
+    footer ul {
+        padding-left: 0;
     }
 }
