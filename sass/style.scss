@@ -79,8 +79,7 @@ body {
     align-items: center;
     align-content: space-between;
     padding: 1rem 1rem;
-    background-color: $color-dark!important;
-    opacity: 0.6;
+    background-color: rgba(0,0,0,.6)!important;
 
     .navbar-brand {flex: 1; }
     .navbar-list {flex: 2; }
@@ -149,7 +148,9 @@ body {
         display: flex;
         flex-direction: column;
     }
+
     p { margin: 0 0 40px; } // top right/left bottom
+
     img {
         width: 100%;
 		height: 350px;
